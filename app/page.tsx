@@ -35,6 +35,7 @@ export default function Home() {
       setShortUrl(data.shortUrl)
     } catch (err) {
       setError('An error occurred while shortening the URL')
+      console.log(err)
     } finally {
       setIsLoading(false)
     }
